@@ -14,6 +14,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="assets/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us | D&K Electric LLC — Licensed & Insured Electrician, Batavia IL</title>
   <meta name="google-translate-customization" content="">
@@ -21,6 +22,7 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.dkelectricllc.com/about.html" />
   <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
 
@@ -29,7 +31,6 @@
 <!-- ============================================ -->
 <header class="nav" role="banner">
   <div class="nav__inner">
-    <div id="google_translate_element"></div>
     <a href="index.html" class="nav__logo" aria-label="D&K Electric LLC Home" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
       <img src="assets/logo.png" alt="D&K Electric LLC logo" style="height:44px;width:auto;display:block;">
       <span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.4rem;color:#ffffff;letter-spacing:0.04em;text-transform:uppercase;">D&K ELECTRIC</span>
@@ -281,16 +282,40 @@
   document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
 </script>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'en',
-    includedLanguages: 'es',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-    autoDisplay: false
-  }, 'google_translate_element');
-}
+<div id="google_translate_element" style="display:none;"></div>
+
+<div id="lang-toggle">
+  <button onclick="toggleLanguage()" id="lang-btn">🌐 Español</button>
+</div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'es',
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+
+  function toggleLanguage() {
+    const btn = document.getElementById('lang-btn');
+    const isEnglish = btn.textContent.includes('Español');
+    if (isEnglish) {
+      const select = document.querySelector('.goog-te-combo');
+      if (select) {
+        select.value = 'es';
+        select.dispatchEvent(new Event('change'));
+      }
+      btn.textContent = '🌐 English';
+    } else {
+      const select = document.querySelector('.goog-te-combo');
+      if (select) {
+        select.value = '';
+        select.dispatchEvent(new Event('change'));
+      }
+      btn.textContent = '🌐 Español';
+    }
+  }
 </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

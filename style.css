@@ -1048,3 +1048,31 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
   .cta-banner__phone { font-size: 28px; }
   .section-title { font-size: 1.7rem; }
 }
+
+/* ============================================================
+   LANGUAGE TOGGLE BUTTON
+   ============================================================ */
+#lang-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+#lang-btn {
+  background-color: #001829;
+  color: #FFC500;
+  border: 1px solid #FFC500;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+#lang-btn:hover {
+  background-color: #FFC500;
+  color: #001829;
+}
