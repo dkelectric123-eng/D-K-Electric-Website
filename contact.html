@@ -14,15 +14,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us | D&K Electric LLC — Call 331-230-5878</title>
   <meta name="google-translate-customization" content="">
   <meta name="description" content="Call D&K Electric at 331-230-5878 for a free estimate. We serve Kane County and DuPage County, IL. Available for emergencies 24/7. Or fill out our form and we'll call you back." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.dkelectricllc.com/contact.html" />
-  <link rel="stylesheet" href="style.css" />
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <link rel="canonical" href="https://dkelectricllc.com/contact" />
+  <link rel="stylesheet" href="/style.css" />
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
 
@@ -31,15 +31,16 @@
 <!-- ============================================ -->
 <header class="nav" role="banner">
   <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="D&K Electric LLC Home" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="assets/logo.png" alt="D&K Electric LLC logo" style="height:44px;width:auto;display:block;">
+    <a aria-label='D&K Electric LLC Home' class='nav__logo' href='/' style='display:flex;align-items:center;gap:10px;text-decoration:none;'>
+      <img src="/assets/logo.png" alt="D&K Electric LLC logo" style="height:44px;width:auto;display:block;">
       <span style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.4rem;color:#ffffff;letter-spacing:0.04em;text-transform:uppercase;">D&K ELECTRIC</span>
     </a>
     <nav class="nav__links" role="navigation" aria-label="Main">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href='/'>Home</a>
+      <a href='/services'>Services</a>
+      <a href='/service-areas'>Service Areas</a>
+      <a href='/about'>About</a>
+      <a class='active' href='/contact'>Contact</a>
     </nav>
     <div class="nav__cta">
       <a href="tel:3312305878" class="btn btn--primary" aria-label="Call D&K Electric">Call 331-230-5878</a>
@@ -49,10 +50,11 @@
     </button>
   </div>
   <nav class="nav__mobile" id="mobileNav" aria-label="Mobile navigation">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="contact.html" class="active">Contact</a>
+    <a href='/'>Home</a>
+    <a href='/services'>Services</a>
+      <a href='/service-areas'>Service Areas</a>
+    <a href='/about'>About</a>
+    <a class='active' href='/contact'>Contact</a>
     <a href="tel:3312305878" class="btn btn--primary">Call 331-230-5878</a>
   </nav>
 </header>
@@ -64,7 +66,7 @@
 <!-- ============================================ -->
 <section class="page-hero" aria-labelledby="page-h1">
   <div class="page-hero__inner">
-    <div class="page-hero__crumb"><a href="index.html">Home</a> / Contact</div>
+    <div class="page-hero__crumb"><a href='/'>Home</a> / Contact</div>
     <h1 class="page-hero__h1" id="page-h1">Contact Us</h1>
     <p class="page-hero__sub">We want to hear from you. Call us or fill out the form below. We respond fast.</p>
   </div>
@@ -139,7 +141,7 @@
           <h2 class="form-title">Request a Free Estimate</h2>
           <p class="form-subtitle">Fill this out and we'll call you back. Usually same day.</p>
 
-          <form name="contact" netlify method="POST" netlify-honeypot="bot-field" novalidate aria-label="Free estimate request form">
+          <form aria-label='Free estimate request form' method='POST' name='contact' data-netlify="true" netlify-honeypot="bot-field" action="/contact" novalidate>
             <input type="hidden" name="form-name" value="contact">
             <p style="display:none;"><input name="bot-field"></p>
             <div class="form-row">
@@ -177,7 +179,8 @@
               <textarea class="form-textarea" id="message" name="message" placeholder="What's going on? Where are you located? Any details help us give you a better estimate..." rows="5"></textarea>
             </div>
 
-            <button type="submit" class="btn btn--primary btn--full" style="font-size:15px;padding:15px;">
+            <p style="font-size:13px;color:var(--text-muted-on-light);line-height:1.55;margin:4px 0 16px;">By sending this you're asking us to get back to you about your job — we may call or text the number you give us. We don't send marketing texts and we never pass your number on. See our <a href="/privacy">Privacy Policy</a>.</p>
+<button type="submit" class="btn btn--primary btn--full" style="font-size:15px;padding:15px;">
               Send My Request
             </button>
 
@@ -232,27 +235,32 @@
     <div>
       <div class="footer__heading">Pages</div>
       <ul class="footer__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/services'>Services</a>
+      <a href='/service-areas'>Service Areas</a></li>
+        <li><a href='/about'>About</a></li>
+        <li><a href='/contact'>Contact</a></li>
       </ul>
     </div>
     <div>
-      <div class="footer__heading">Service Area</div>
-      <div class="footer__cities">
-        <strong>Kane County</strong>
-        Batavia · Geneva · St. Charles<br>Aurora · Elgin · South Elgin
+      <div class="footer__heading"><a href="/service-areas" style="color:inherit;">Service Areas</a></div>
+        <div class="footer__cities">
+          <strong>Fox Valley</strong>
+          <a href='/service-areas/batavia' style='color:inherit;'>Batavia</a> · <a href='/service-areas/geneva' style='color:inherit;'>Geneva</a> · <a href='/service-areas/st-charles' style='color:inherit;'>St. Charles</a> · <a href='/service-areas/aurora' style='color:inherit;'>Aurora</a>
+        </div>
+        <div class="footer__cities" style="margin-top:14px;">
+          <strong>Also serving</strong>
+          Elgin · South Elgin<br>Naperville · Wheaton · Lisle<br>Downers Grove · Warrenville
+        </div>
       </div>
-      <div class="footer__cities" style="margin-top:14px;">
-        <strong>DuPage County</strong>
-        Naperville · Wheaton · Lisle<br>Downers Grove · Warrenville
-      </div>
-    </div>
   </div>
   <div class="footer__bottom">
-    <span>&copy; 2025 D&amp;K Electric LLC. All rights reserved.</span>
-    <span>IL License #26-00034250 &nbsp;&middot;&nbsp; C10 Certified</span>
+    <span>&copy; 2026 D&amp;K Electric LLC. All rights reserved.</span>
+    <span>IL License #26-00034250</span>
+  </div>
+
+  <div class="footer__bottom" style="border-top:none;padding-top:0;">
+    <span><a href="/privacy">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="/terms">Terms of Use</a> &nbsp;&middot;&nbsp; <a href="/accessibility">Accessibility</a></span>
   </div>
 </footer>
 
@@ -281,12 +289,13 @@ if (form) {
     e.preventDefault();
     const data = new FormData(form);
     try {
-      await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(data).toString()
-      });
-      form.style.display = 'none';
+      const res = await fetch('/', {
+method: 'POST',
+headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+body: new URLSearchParams(data).toString()
+});
+if (!res.ok) throw new Error('Form POST returned ' + res.status);
+form.style.display = 'none';
       document.getElementById('thank-you').style.display = 'block';
     } catch (err) {
       alert('Something went wrong. Please call us directly at 331-230-5878');

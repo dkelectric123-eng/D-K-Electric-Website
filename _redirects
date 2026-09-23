@@ -1,0 +1,39 @@
+# Netlify redirects.
+#
+# Every page here is a .html file served at a clean, slash-less URL by
+# Netlify's "Pretty URLs" processing — about.html answers at /about. That is
+# how this site has always worked and these URLs are already indexed, so the
+# layout keeps it rather than switching to directories, which would make
+# Netlify redirect /about to /about/ and change every URL Google knows.
+#
+# The problem Pretty URLs leaves behind is that the .html form ALSO answers
+# 200. The same page on two URLs splits its ranking signals. These rules fold
+# the .html form onto the clean one.
+#
+# The ! is required. Without it a static file that exists wins over a redirect,
+# and about.html very much exists. With it, the redirect runs first.
+#
+# No loop risk: the rule matches the request path /about.html. A request for
+# /about never matches it — Pretty URLs serves that from about.html internally
+# as a rewrite, not a redirect.
+
+/index.html                              /                                    301!
+/about.html                              /about                               301!
+/contact.html                            /contact                             301!
+/services.html                           /services                            301!
+/service-areas.html                      /service-areas                       301!
+/privacy.html                            /privacy                             301!
+/terms.html                              /terms                               301!
+/accessibility.html                      /accessibility                       301!
+
+/services/electrical-troubleshooting.html  /services/electrical-troubleshooting  301!
+/services/ev-charger-installation.html     /services/ev-charger-installation     301!
+/services/panel-upgrades.html              /services/panel-upgrades              301!
+/services/residential-wiring.html          /services/residential-wiring          301!
+/services/commercial-electrical.html       /services/commercial-electrical       301!
+/services/industrial-electrical.html       /services/industrial-electrical       301!
+
+/service-areas/batavia.html              /service-areas/batavia               301!
+/service-areas/geneva.html               /service-areas/geneva                301!
+/service-areas/st-charles.html           /service-areas/st-charles            301!
+/service-areas/aurora.html               /service-areas/aurora                301!

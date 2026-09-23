@@ -44,6 +44,12 @@
   --text:        var(--color-text);
   --text-muted:  #718096;
   --text-light:  #A0AEC0;
+  /* Accessible variants for small text on LIGHT backgrounds. The originals
+     above stay for use on navy, where they are already high contrast.
+     Added 2026-09-23: --text-light was 2.26:1 on white and --text-muted 3.81:1
+     on --bg-alt. Both failed WCAG AA for normal text. These pass at 4.5:1. */
+  --text-muted-on-light: #657389;
+  --text-light-on-light: #627793;
   --shadow-sm:   0 1px 4px rgba(11,24,41,0.06);
   --shadow:      0 2px 12px rgba(11,24,41,0.07);
   --shadow-md:   0 6px 24px rgba(11,24,41,0.09);
@@ -625,7 +631,7 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
   color: var(--navy);
   text-transform: uppercase;
 }
-.review-author__meta { font-size: 12px; color: var(--text-light); margin-top: 3px; }
+.review-author__meta { font-size: 12px; color: var(--text-light-on-light); margin-top: 3px; }
 
 /* ============================================================
    CTA BANNER
@@ -765,7 +771,7 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
   text-transform: uppercase;
   margin-bottom: 12px;
 }
-.page-hero__sub { font-size: 15px; color: var(--text-muted); max-width: 480px; }
+.page-hero__sub { font-size: 15px; color: var(--text-muted-on-light); max-width: 480px; }
 
 /* ============================================================
    ABOUT PAGE
