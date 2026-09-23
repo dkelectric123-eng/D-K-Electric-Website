@@ -1,0 +1,15 @@
+# Netlify redirects.
+#
+# The live site currently answers on two URLs for every page — /services and
+# /services.html both return 200 — because the deployed files are flat
+# (services.html at the root) and Netlify also serves them extensionless.
+#
+# This repo uses services/index.html instead, so the .html forms stop existing
+# on the next deploy. These rules make them 301 to the real URL rather than
+# 404, which keeps any link or bookmark pointing at the .html version working
+# and folds its ranking signals onto the URL we actually use.
+
+/index.html       /            301
+/services.html    /services    301
+/about.html       /about       301
+/contact.html     /contact     301

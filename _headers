@@ -1,0 +1,47 @@
+# Netlify security headers.
+#
+# The site had only HSTS before this file. Everything below is a header Netlify
+# adds at the edge — no build step, no code change, nothing to maintain.
+#
+# A note on the CSP: this site writes its JavaScript inline, in two or three
+# <script> blocks per page, plus one onclick handler on the language button.
+# A static site with no build step cannot use nonces, so 'unsafe-inline' has to
+# stay for scripts and styles or every page breaks. That is a real limit and
+# worth being honest about — this CSP does NOT stop injected inline script.
+#
+# What it DOES stop is the whole class of attacks that matter for a brochure
+# site: the page cannot be framed for clickjacking, the form cannot be pointed
+# at someone else's server, <base> cannot be injected to hijack relative URLs,
+# plugins cannot run, and nothing can load from a host that isn't listed.
+#
+# If inline scripts are ever moved into a .js file, drop 'unsafe-inline' from
+# script-src and this becomes a genuinely strong policy.
+
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://translate.google.com https://translate.googleapis.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://www.gstatic.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://translate.googleapis.com https://www.gstatic.com; connect-src 'self' https://translate.googleapis.com; frame-src https://translate.google.com; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+
+  # Belt and braces for older browsers that ignore frame-ancestors.
+  X-Frame-Options: DENY
+
+  # Stop the browser guessing a file is something other than what we served.
+  X-Content-Type-Options: nosniff
+
+  # Send the full URL to our own pages, only the origin to third parties,
+  # and nothing at all when downgrading to http.
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # This is an electrician's brochure site. It has no business asking for any
+  # of these, so the browser is told to refuse on our behalf.
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), interest-cohort=()
+
+  # Already served by Netlify, restated here so it survives a config change.
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+  # Isolate this origin from anything that opens it.
+  Cross-Origin-Opener-Policy: same-origin
+  X-DNS-Prefetch-Control: off
+
+# Long cache for things that don't change often, with the filename as the
+# cache key. If style.css is ever edited, add a ?v= to the link tags.
+/assets/*
+  Cache-Control: public, max-age=2592000
