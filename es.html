@@ -27,33 +27,55 @@
 
   <!-- LocalBusiness Schema -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Electrician",
-    "name": "D&K Electric LLC",
-    "url": "https://dkelectricllc.com",
-    "telephone": "331-230-5878",
-    "email": "dkelectric123@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1198 Giese Rd",
-      "addressLocality": "Batavia",
-      "addressRegion": "IL",
-      "postalCode": "60510",
-      "addressCountry": "US"
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "D&K Electric LLC",
+  "url": "https://dkelectricllc.com",
+  "telephone": "331-230-5878",
+  "email": "dkelectric123@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Batavia",
+    "addressRegion": "IL",
+    "postalCode": "60510",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.85,
+    "longitude": -88.3121
+  },
+  "areaServed": [
+    {
+      "@type": "County",
+      "name": "Kane County",
+      "addressRegion": "IL"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 41.8500, "longitude": -88.3121 },
-    "areaServed": [
-      { "@type": "County", "name": "Kane County", "addressRegion": "IL" },
-      { "@type": "County", "name": "DuPage County", "addressRegion": "IL" }
-    ],
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "16:00" }
-    ],
-    "priceRange": "$$",
-    "hasCredential": "Illinois Electrical License #26-00034250",
-    "description": "Licensed, insured electrician serving Kane County and DuPage County, IL. EV chargers, panel upgrades, residential, commercial, industrial, and troubleshooting."
-  }
+    {
+      "@type": "County",
+      "name": "DuPage County",
+      "addressRegion": "IL"
+    }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "16:00"
+    }
+  ],
+  "priceRange": "$$",
+  "hasCredential": "Illinois Electrical License #26-00034250",
+  "description": "Licensed, insured electrician serving Kane County and DuPage County, IL. EV chargers, panel upgrades, residential, commercial, industrial, and troubleshooting."
+}
   </script>
   <link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es" />
   <link rel="alternate" hreflang="en" href="https://dkelectricllc.com/" />
@@ -262,7 +284,7 @@
     <div class="stats-grid fade-up delay-2">
       <div class="stat-card">
         <div class="stat-card__num">20+</div>
-        <div class="stat-card__label">Años de experiencia. Más de 3 años en el negocio.</div>
+        <div class="stat-card__label">Años de experiencia. En el negocio desde 2022.</div>
       </div>
       <div class="stat-card">
         <div class="stat-card__num">500+</div>
@@ -346,7 +368,7 @@
       <div class="footer__contact">
         <a href="tel:3312305878">331-230-5878</a>
         <a href="mailto:dkelectric123@gmail.com">dkelectric123@gmail.com</a>
-        <a>1198 Giese Rd, Batavia, IL 60510</a>
+        <a>Batavia, IL 60510</a>
         <a>Lun–Vie 8am–4pm | Emergencias: 24/7</a>
       </div>
     </div>
@@ -375,7 +397,7 @@
   </div>
   <div class="footer__bottom">
     <span>&copy; 2026 D&amp;K Electric LLC. All rights reserved.</span>
-    <span>IL License #26-00034250</span>
+    <span>IL License #26-00034250 &nbsp;&middot;&nbsp; Certificado C10</span>
   </div>
 
   <div class="footer__bottom" style="border-top:none;padding-top:0;">
