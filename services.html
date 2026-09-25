@@ -14,15 +14,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="icon" type="image/png" href="/assets/logo-mark-navy.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Electrical Services | D&K Electric LLC — Kane & DuPage County, IL</title>
-  <meta name="google-translate-customization" content="">
   <meta name="description" content="D&K Electric offers EV charger installation, panel upgrades, electrical troubleshooting, residential, commercial, and industrial wiring in Kane County and DuPage County, IL. Call 331-230-5878." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://dkelectricllc.com/services" />
   <link rel="stylesheet" href="/style.css" />
-  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
 
@@ -265,42 +263,6 @@
     });
   }, { threshold: 0.08 });
   document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
-</script>
-
-<div id="google_translate_element" style="display:none;"></div>
-
-<div id="lang-toggle">
-  <button onclick="toggleLanguage()" id="lang-btn">🌐 Español</button>
-</div>
-
-<script>
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'en',
-      includedLanguages: 'es',
-      autoDisplay: false
-    }, 'google_translate_element');
-  }
-
-  function toggleLanguage() {
-    const btn = document.getElementById('lang-btn');
-    const isEnglish = btn.textContent.includes('Español');
-    if (isEnglish) {
-      const select = document.querySelector('.goog-te-combo');
-      if (select) {
-        select.value = 'es';
-        select.dispatchEvent(new Event('change'));
-      }
-      btn.textContent = '🌐 English';
-    } else {
-      const select = document.querySelector('.goog-te-combo');
-      if (select) {
-        select.value = '';
-        select.dispatchEvent(new Event('change'));
-      }
-      btn.textContent = '🌐 Español';
-    }
-  }
 </script>
 </body>
 </html>

@@ -14,10 +14,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="icon" type="image/png" href="/assets/logo-mark-navy.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>D&K Electric LLC | Licensed Electricians — Kane & DuPage County, IL</title>
-  <meta name="google-translate-customization" content="">
   <meta name="description" content="D&K Electric is a licensed, insured electrician in Batavia, IL. We do EV chargers, panel upgrades, troubleshooting, and more. Serving Kane County and DuPage County. Call 331-230-5878 for a free estimate." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://dkelectricllc.com/" />
@@ -25,7 +24,6 @@
   <meta property="og:title" content="D&K Electric LLC — Licensed Electrician Kane & DuPage County IL" />
   <meta property="og:description" content="Licensed, insured electrician serving Kane and DuPage County, IL. EV chargers, panel upgrades, troubleshooting. Call 331-230-5878." />
   <link rel="stylesheet" href="/style.css" />
-  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <!-- LocalBusiness Schema -->
   <script type="application/ld+json">
@@ -395,42 +393,6 @@
     });
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
-</script>
-
-<div id="google_translate_element" style="display:none;"></div>
-
-<div id="lang-toggle">
-  <button onclick="toggleLanguage()" id="lang-btn">🌐 Español</button>
-</div>
-
-<script>
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'en',
-      includedLanguages: 'es',
-      autoDisplay: false
-    }, 'google_translate_element');
-  }
-
-  function toggleLanguage() {
-    const btn = document.getElementById('lang-btn');
-    const isEnglish = btn.textContent.includes('Español');
-    if (isEnglish) {
-      const select = document.querySelector('.goog-te-combo');
-      if (select) {
-        select.value = 'es';
-        select.dispatchEvent(new Event('change'));
-      }
-      btn.textContent = '🌐 English';
-    } else {
-      const select = document.querySelector('.goog-te-combo');
-      if (select) {
-        select.value = '';
-        select.dispatchEvent(new Event('change'));
-      }
-      btn.textContent = '🌐 Español';
-    }
-  }
 </script>
 </body>
 </html>
