@@ -1,111 +1,292 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dkelectricllc.com/</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/services</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/services"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/servicios"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/services"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/servicios</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/services"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/servicios"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/services"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/service-areas</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/service-areas"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/zonas-de-servicio"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/service-areas"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/zonas-de-servicio</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/service-areas"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/zonas-de-servicio"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/service-areas"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/about</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>yearly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/nosotros"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/about"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/nosotros</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/nosotros"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/about"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/contact</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>yearly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/contacto"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/contact"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/contacto</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/contacto"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/contact"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/services/electrical-troubleshooting</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/services/electrical-troubleshooting"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/servicios/diagnostico-de-fallas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/services/electrical-troubleshooting"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/servicios/diagnostico-de-fallas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/services/electrical-troubleshooting"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/servicios/diagnostico-de-fallas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/services/electrical-troubleshooting"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/services/ev-charger-installation</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/services/ev-charger-installation"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/servicios/instalacion-cargadores-ev"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/services/ev-charger-installation"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/servicios/instalacion-cargadores-ev</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/services/ev-charger-installation"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/servicios/instalacion-cargadores-ev"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/services/ev-charger-installation"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/services/panel-upgrades</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/services/panel-upgrades"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/servicios/actualizacion-de-paneles"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/services/panel-upgrades"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/servicios/actualizacion-de-paneles</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/services/panel-upgrades"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/servicios/actualizacion-de-paneles"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/services/panel-upgrades"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/services/residential-wiring</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/services/residential-wiring"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/servicios/cableado-residencial"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/services/residential-wiring"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/servicios/cableado-residencial</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/services/residential-wiring"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/servicios/cableado-residencial"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/services/residential-wiring"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/services/commercial-electrical</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/services/commercial-electrical"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/servicios/electricidad-comercial"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/services/commercial-electrical"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/servicios/electricidad-comercial</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/services/commercial-electrical"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/servicios/electricidad-comercial"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/services/commercial-electrical"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/services/industrial-electrical</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/services/industrial-electrical"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/servicios/electricidad-industrial"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/services/industrial-electrical"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/servicios/electricidad-industrial</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/services/industrial-electrical"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/servicios/electricidad-industrial"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/services/industrial-electrical"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/service-areas/batavia</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/service-areas/batavia"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/zonas-de-servicio/batavia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/service-areas/batavia"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/zonas-de-servicio/batavia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/service-areas/batavia"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/zonas-de-servicio/batavia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/service-areas/batavia"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/service-areas/geneva</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/service-areas/geneva"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/zonas-de-servicio/geneva"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/service-areas/geneva"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/zonas-de-servicio/geneva</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/service-areas/geneva"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/zonas-de-servicio/geneva"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/service-areas/geneva"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/service-areas/st-charles</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/service-areas/st-charles"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/zonas-de-servicio/st-charles"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/service-areas/st-charles"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/zonas-de-servicio/st-charles</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/service-areas/st-charles"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/zonas-de-servicio/st-charles"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/service-areas/st-charles"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/service-areas/aurora</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/service-areas/aurora"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/zonas-de-servicio/aurora"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/service-areas/aurora"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/zonas-de-servicio/aurora</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/service-areas/aurora"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/zonas-de-servicio/aurora"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/service-areas/aurora"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/privacy</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>yearly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/privacidad"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/privacy"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/privacidad</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/privacidad"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/privacy"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/terms</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>yearly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/terminos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/terms"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/terminos</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/terms"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/terminos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/terms"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://dkelectricllc.com/accessibility</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>yearly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/accessibility"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/accesibilidad"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/accessibility"/>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://dkelectricllc.com/es/accesibilidad</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dkelectricllc.com/accessibility"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/accesibilidad"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/accessibility"/>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.3</priority>
   </url>
 </urlset>

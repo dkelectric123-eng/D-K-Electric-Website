@@ -37,3 +37,23 @@
 /service-areas/geneva.html               /service-areas/geneva                301!
 /service-areas/st-charles.html           /service-areas/st-charles            301!
 /service-areas/aurora.html               /service-areas/aurora                301!
+
+# Spanish pages
+/es.html                                                /es   301!
+/es/servicios.html                                      /es/servicios   301!
+/es/zonas-de-servicio.html                              /es/zonas-de-servicio   301!
+/es/nosotros.html                                       /es/nosotros   301!
+/es/contacto.html                                       /es/contacto   301!
+/es/servicios/diagnostico-de-fallas.html                /es/servicios/diagnostico-de-fallas   301!
+/es/servicios/instalacion-cargadores-ev.html            /es/servicios/instalacion-cargadores-ev   301!
+/es/servicios/actualizacion-de-paneles.html             /es/servicios/actualizacion-de-paneles   301!
+/es/servicios/cableado-residencial.html                 /es/servicios/cableado-residencial   301!
+/es/servicios/electricidad-comercial.html               /es/servicios/electricidad-comercial   301!
+/es/servicios/electricidad-industrial.html              /es/servicios/electricidad-industrial   301!
+/es/zonas-de-servicio/batavia.html                      /es/zonas-de-servicio/batavia   301!
+/es/zonas-de-servicio/geneva.html                       /es/zonas-de-servicio/geneva   301!
+/es/zonas-de-servicio/st-charles.html                   /es/zonas-de-servicio/st-charles   301!
+/es/zonas-de-servicio/aurora.html                       /es/zonas-de-servicio/aurora   301!
+/es/privacidad.html                                     /es/privacidad   301!
+/es/terminos.html                                       /es/terminos   301!
+/es/accesibilidad.html                                  /es/accesibilidad   301!
