@@ -57,3 +57,17 @@
 /es/privacidad.html                                     /es/privacidad   301!
 /es/terminos.html                                       /es/terminos   301!
 /es/accesibilidad.html                                  /es/accesibilidad   301!
+
+# Review request page.
+#
+# The funnel itself lives on Perspective. Danny texts dkelectricllc.com/review
+# instead, because a customer who just paid him recognises his own domain and
+# will not recognise perspectivefunnel.co. If the funnel ever moves, one line
+# changes here and every link already sent keeps working.
+#
+# 302, not 301: browsers cache a 301 forever, and this destination is not
+# permanent.
+/review                                              https://perspectivefunnel.co/6ab33e3da6ec8cd9d4ca1999/6ab6bf86ca7feddc7b36eb68/  302!
+/resena                                              https://perspectivefunnel.co/6ab33e3da6ec8cd9d4ca1999/6ab6bf86ca7feddc7b36eb68/  302!
+/es/resena                                           https://perspectivefunnel.co/6ab33e3da6ec8cd9d4ca1999/6ab6bf86ca7feddc7b36eb68/  302!
+
