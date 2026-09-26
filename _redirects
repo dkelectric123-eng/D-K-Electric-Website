@@ -71,3 +71,13 @@
 /resena                                              https://perspectivefunnel.co/6ab33e3da6ec8cd9d4ca1999/6ab6bf86ca7feddc7b36eb68/  302!
 /es/resena                                           https://perspectivefunnel.co/6ab33e3da6ec8cd9d4ca1999/6ab6bf86ca7feddc7b36eb68/  302!
 
+# Blog
+/blog.html                                              /blog   301!
+/es/blog.html                                           /es/blog   301!
+/blog/breaker-keeps-tripping.html                       /blog/breaker-keeps-tripping   301!
+/es/blog/breaker-se-sigue-botando.html                  /es/blog/breaker-se-sigue-botando   301!
+/blog/does-my-panel-need-upgrading.html                 /blog/does-my-panel-need-upgrading   301!
+/es/blog/mi-panel-necesita-actualizarse.html            /es/blog/mi-panel-necesita-actualizarse   301!
+/blog/ev-charger-what-to-know.html                      /blog/ev-charger-what-to-know   301!
+/es/blog/cargador-ev-lo-que-hay-que-saber.html          /es/blog/cargador-ev-lo-que-hay-que-saber   301!
+
