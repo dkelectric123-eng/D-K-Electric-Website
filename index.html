@@ -50,6 +50,66 @@
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "16:00" }
     ],
     "priceRange": "$$",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Electrical services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Electrical Troubleshooting",
+            "serviceType": "Electrical Troubleshooting",
+            "url": "https://dkelectricllc.com/services/electrical-troubleshooting"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "EV Charger Installation",
+            "serviceType": "EV Charger Installation",
+            "url": "https://dkelectricllc.com/services/ev-charger-installation"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Panel Upgrades",
+            "serviceType": "Panel Upgrades",
+            "url": "https://dkelectricllc.com/services/panel-upgrades"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Residential Wiring",
+            "serviceType": "Residential Wiring",
+            "url": "https://dkelectricllc.com/services/residential-wiring"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Commercial Electrical",
+            "serviceType": "Commercial Electrical",
+            "url": "https://dkelectricllc.com/services/commercial-electrical"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Industrial Electrical",
+            "serviceType": "Industrial Electrical",
+            "url": "https://dkelectricllc.com/services/industrial-electrical"
+          }
+        }
+      ]
+    },
     "hasCredential": "Illinois Electrical License #26-00034250",
     "description": "Licensed, insured electrician serving Kane County and DuPage County, IL. EV chargers, panel upgrades, residential, commercial, industrial, and troubleshooting."
   }
@@ -57,6 +117,7 @@
   <link rel="alternate" hreflang="en" href="https://dkelectricllc.com/" />
   <link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es" />
   <link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/" />
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
@@ -171,7 +232,7 @@
         </div>
         <h3 class="card__title">Electrical Troubleshooting</h3>
         <p class="card__desc">Breakers tripping? Outlets not working? We find the problem fast and fix it right.</p>
-        <a class='card__link' href='/services/electrical-troubleshooting'>Learn More &rarr;</a>
+        <a class='card__link' href='/services/electrical-troubleshooting'>Learn More<span class="sr-only"> about electrical troubleshooting</span> &rarr;</a>
       </div>
 
       <div class="card fade-up delay-2">
@@ -180,7 +241,7 @@
         </div>
         <h3 class="card__title">EV Charger Installation</h3>
         <p class="card__desc">We install Level 2 chargers at home or work. Permit-ready and done right.</p>
-        <a class='card__link' href='/services/ev-charger-installation'>Learn More &rarr;</a>
+        <a class='card__link' href='/services/ev-charger-installation'>Learn More<span class="sr-only"> about EV charger installation</span> &rarr;</a>
       </div>
 
       <div class="card fade-up delay-3">
@@ -189,7 +250,7 @@
         </div>
         <h3 class="card__title">Panel Upgrades</h3>
         <p class="card__desc">Old panel holding you back? We upgrade to 200 amp and bring it up to code.</p>
-        <a class='card__link' href='/services/panel-upgrades'>Learn More &rarr;</a>
+        <a class='card__link' href='/services/panel-upgrades'>Learn More<span class="sr-only"> about panel upgrades</span> &rarr;</a>
       </div>
 
       <div class="card fade-up delay-1">
@@ -198,7 +259,7 @@
         </div>
         <h3 class="card__title">Residential Wiring</h3>
         <p class="card__desc">New outlets, lighting, full rewires. We take care of your home like it's our own.</p>
-        <a class='card__link' href='/services/residential-wiring'>Learn More &rarr;</a>
+        <a class='card__link' href='/services/residential-wiring'>Learn More<span class="sr-only"> about residential wiring</span> &rarr;</a>
       </div>
 
       <div class="card fade-up delay-2">
@@ -207,7 +268,7 @@
         </div>
         <h3 class="card__title">Commercial Electrical</h3>
         <p class="card__desc">We work with business owners and contractors to get the job done on time.</p>
-        <a class='card__link' href='/services/commercial-electrical'>Learn More &rarr;</a>
+        <a class='card__link' href='/services/commercial-electrical'>Learn More<span class="sr-only"> about commercial electrical work</span> &rarr;</a>
       </div>
 
       <div class="card fade-up delay-3">
@@ -216,7 +277,7 @@
         </div>
         <h3 class="card__title">Industrial Electrical</h3>
         <p class="card__desc">Machine wiring, 3-phase power, and industrial installs done safely and on schedule.</p>
-        <a class='card__link' href='/services/industrial-electrical'>Learn More &rarr;</a>
+        <a class='card__link' href='/services/industrial-electrical'>Learn More<span class="sr-only"> about industrial electrical work</span> &rarr;</a>
       </div>
 
     </div>

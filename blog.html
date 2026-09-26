@@ -18,6 +18,89 @@
   <link rel="alternate" hreflang="en" href="https://dkelectricllc.com/blog" />
   <link rel="alternate" hreflang="es" href="https://dkelectricllc.com/es/blog" />
   <link rel="alternate" hreflang="x-default" href="https://dkelectricllc.com/blog" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Blog",
+      "@id": "https://dkelectricllc.com/blog#blog",
+      "name": "D&K Electric Advice",
+      "url": "https://dkelectricllc.com/blog",
+      "description": "Plain answers to the electrical questions we get asked most in Kane and DuPage County, IL.",
+      "publisher": {
+        "@type": "Electrician",
+        "name": "D&K Electric LLC",
+        "url": "https://dkelectricllc.com"
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "Why Your Breaker Keeps Tripping",
+          "url": "https://dkelectricllc.com/blog/breaker-keeps-tripping"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Signs Your Electrical Panel Needs Upgrading",
+          "url": "https://dkelectricllc.com/blog/does-my-panel-need-upgrading"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "What to Know Before Installing an EV Charger at Home",
+          "url": "https://dkelectricllc.com/blog/ev-charger-what-to-know"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dkelectricllc.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://dkelectricllc.com/blog"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is it safe to keep resetting a breaker that trips?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not repeatedly. A breaker trips because it is doing its job — it has detected more current than the circuit is built to carry, or a fault. Resetting it once to see if it holds is reasonable. Resetting it again and again removes the protection without removing the cause. If it trips a second time, stop and have the circuit looked at."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a permit for electrical work on my house?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually, yes. Swapping a light fixture or a device is generally treated differently from new circuits, a service change or a panel replacement, and those larger jobs normally need a permit and an inspection. The requirement is set by your municipality, not by the electrician. A licensed electrician will tell you which category your job falls into and pull the permit as part of the work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I check that an electrician is actually licensed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ask for the licence number and check it — a licensed electrician will give it without hesitating. Ours is Illinois Electrical License #26-00034250 and it is printed on every page of this site. Also ask whether they carry insurance, and get the answer before the work starts rather than after something goes wrong."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
@@ -96,6 +179,28 @@
   </div>
 </section>
 
+<section class="section section--alt" aria-labelledby="blog-faq-h2">
+  <div class="container">
+    <span class="eyebrow">Questions</span>
+    <h2 class="section-title" id="blog-faq-h2">Before you call anyone</h2>
+    <p class="section-sub">Three things worth knowing, whoever ends up doing the work.</p>
+    <div class="cards-grid">
+      <div class="card fade-up delay-1">
+        <h3 class="card__title">Is it safe to keep resetting a breaker that trips?</h3>
+        <p class="card__desc">Not repeatedly. A breaker trips because it is doing its job — it has detected more current than the circuit is built to carry, or a fault. Resetting it once to see if it holds is reasonable. Resetting it again and again removes the protection without removing the cause. If it trips a second time, stop and have the circuit looked at.</p>
+      </div>
+      <div class="card fade-up delay-2">
+        <h3 class="card__title">Do I need a permit for electrical work on my house?</h3>
+        <p class="card__desc">Usually, yes. Swapping a light fixture or a device is generally treated differently from new circuits, a service change or a panel replacement, and those larger jobs normally need a permit and an inspection. The requirement is set by your municipality, not by the electrician. A licensed electrician will tell you which category your job falls into and pull the permit as part of the work.</p>
+      </div>
+      <div class="card fade-up delay-3">
+        <h3 class="card__title">How do I check that an electrician is actually licensed?</h3>
+        <p class="card__desc">Ask for the licence number and check it — a licensed electrician will give it without hesitating. Ours is Illinois Electrical License #26-00034250 and it is printed on every page of this site. Also ask whether they carry insurance, and get the answer before the work starts rather than after something goes wrong.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="cta-banner" aria-label="Call to action">
   <div class="cta-banner__inner">
     <div>
@@ -156,6 +261,14 @@ hamburger.addEventListener('click', () => {
   mobileNav.classList.toggle('open', open);
   hamburger.setAttribute('aria-expanded', open);
 });
+// The blog index was built by a different script and this was left out, so its
+// cards never received .visible and nobody ever saw them.
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
 </script>
 
 </body>
