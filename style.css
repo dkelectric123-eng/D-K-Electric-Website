@@ -39,6 +39,10 @@
   --navy-mid:    #162236;
   --yellow:      var(--color-yellow);
   --yellow-dark: #D4A800;
+  /* Gold that survives a light background. The brand gold measures 2.23:1 on
+     white against a 4.5:1 standard; this clears AA on both the white and the
+     #F7F9FC section backgrounds the eyebrow labels actually sit on. */
+  --gold-on-light: #896C00;
   --bg-alt:      var(--color-light);
   --border:      var(--color-border);
   --text:        var(--color-text);
@@ -99,7 +103,7 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--yellow-dark);
+  color: var(--gold-on-light);
   margin-bottom: 12px;
 }
 
@@ -116,7 +120,7 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
 }
 .section-sub {
   font-size: 15px;
-  color: var(--text-muted);
+  color: var(--text-muted-on-light);
   max-width: 500px;
   line-height: 1.65;
 }
@@ -232,7 +236,23 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
 .nav__links a:hover::after { width: 100%; }
 .nav__links a.active { color: var(--white); }
 
-.nav__cta { flex-shrink: 0; }
+.nav__cta { flex-shrink: 0; display: flex; align-items: center; gap: 20px; }
+
+/* The language switch. It lives next to the Call button rather than in the nav
+   list, so it needs the nav's type treatment spelled out — without this it
+   inherits the browser default and reads as greyed-out on navy. */
+.nav__lang {
+  font-family: var(--font-h);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+.nav__lang:hover { color: var(--yellow); }
 
 .nav__hamburger {
   display: none;
@@ -302,7 +322,7 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--yellow-dark);
+  color: var(--gold-on-light);
   margin-bottom: 16px;
 }
 .hero__eyebrow::before {
@@ -452,7 +472,7 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--yellow-dark);
+  color: var(--gold-on-light);
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -599,7 +619,7 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
   font-family: var(--font-h);
   font-size: 13px;
   font-weight: 700;
-  color: var(--text-muted);
+  color: var(--text-muted-on-light);
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -757,10 +777,10 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-light);
+  color: var(--text-muted-on-light);
   margin-bottom: 14px;
 }
-.page-hero__crumb a { color: var(--yellow-dark); }
+.page-hero__crumb a { color: var(--gold-on-light); }
 .page-hero__h1 {
   font-family: var(--font-h);
   font-size: clamp(32px, 5vw, 52px);
@@ -838,7 +858,7 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
 .cred-icon svg { width: 18px; height: 18px; stroke: var(--yellow-dark); }
 .cred-label {
   font-size: 11px;
-  color: var(--text-light);
+  color: var(--text-muted-on-light);
   margin-bottom: 2px;
   font-family: var(--font-h);
   font-weight: 700;
@@ -888,7 +908,7 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-light);
+  color: var(--text-muted-on-light);
   margin-bottom: 4px;
 }
 .contact-card__value {
@@ -916,7 +936,7 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
   text-transform: uppercase;
   margin-bottom: 4px;
 }
-.form-subtitle { font-size: 13px; color: var(--text-muted); margin-bottom: 28px; }
+.form-subtitle { font-size: 13px; color: var(--text-muted-on-light); margin-bottom: 28px; }
 
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .form-group { margin-bottom: 16px; }
@@ -927,10 +947,10 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--text-muted-on-light);
   margin-bottom: 6px;
 }
-.form-label span { color: #e53e3e; }
+.form-label span { color: #D32F2F; }
 .form-input,
 .form-select,
 .form-textarea {
@@ -964,10 +984,10 @@ button { cursor: pointer; font-family: var(--font-b); border: none; background: 
 .form-direct {
   text-align: center;
   font-size: 13px;
-  color: var(--text-muted);
+  color: var(--text-muted-on-light);
   margin-top: 12px;
 }
-.form-direct a { color: var(--yellow-dark); font-weight: 600; }
+.form-direct a { color: var(--gold-on-light); font-weight: 600; }
 
 /* ============================================================
    SCROLL ANIMATIONS
