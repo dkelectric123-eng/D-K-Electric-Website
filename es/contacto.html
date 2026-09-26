@@ -295,6 +295,18 @@ const form = document.querySelector('form[name="contact"]');
 if (form) {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+    // Where the lead came from. Read at submit time from the URL and the referrer —
+      // nothing is stored in the browser, so the "no cookies, no localStorage" line
+      // in the privacy policy stays true.
+      const q = new URLSearchParams(location.search);
+      const utm = ['utm_source','utm_medium','utm_campaign','gclid']
+        .map(k => q.get(k) ? k + '=' + q.get(k) : null).filter(Boolean).join(' ');
+      let ref = document.referrer || '';
+      try { if (ref && new URL(ref).host === location.host) ref = 'same site: ' + new URL(ref).pathname; } catch (e) {}
+      const set = (id, v) => { const el = document.getElementById(id); if (el) el.value = v; };
+      set('f-page', location.pathname);
+      set('f-ref',  ref || 'typed in or bookmarked');
+      set('f-utm',  utm || '');
     const data = new FormData(form);
     try {
       const res = await fetch('/', {
